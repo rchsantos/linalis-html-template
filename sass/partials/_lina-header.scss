@@ -1,0 +1,89 @@
+@import "../bootstrap-variables";
+
+// Navigation
+.navbar-default {
+  margin: 0;
+  background-color: rgba( $brand-primary, .8 );
+  border: none;
+
+  .navbar-toggle {
+    border: none;
+    transition: all 0.2s;
+
+    .icon-bar {
+      background-color: $brand-white;
+    }
+
+    &:hover {
+      background-color: transparent;
+      transform: scale(1.7);
+    }
+  }
+
+  img {
+    width: 120px;
+    height: 25px;
+  }
+
+  .navbar-nav {
+
+    ul {
+
+      li {
+
+        a {
+          color: $brand-white;
+        }
+
+      }
+
+    }
+
+  }
+}
+
+// jumbotron
+
+.jumbotron {
+  @extend .navbar-default;
+
+  position: relative;
+  top: -4em;
+  padding-top: 4em;
+  height: 34.286em;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  color: $brand-white;
+
+   > div {
+     height: 30.3em;
+     padding-top: 111px;
+     background-color: rgba( $brand-primary, .8 );
+  }
+
+  h1 {
+    margin: 0.5em;
+    font-size: 3.4em;
+  }
+
+  h2 {
+    margin: 1em;
+  }
+
+  .btn-primary {
+    color: $brand-primary;
+    background-color: $brand-white;
+
+  }
+
+  .btn {
+
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+  }
+}

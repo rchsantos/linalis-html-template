@@ -1,0 +1,121 @@
+@import "../bootstrap-variables";
+
+body {
+  color: $text-color;
+
+  p {
+    text-align: left;
+  }
+
+  section {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 50px;
+
+    h2 {
+      margin-top: 50px;
+      text-align: center;
+      color: $h1-color;
+    }
+
+    hr {
+      margin-bottom: 30px;
+      width: 105px;
+      border-bottom: 3px solid $brand-primary;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    &.odd {
+      background-color: $gray-base;
+    }
+
+    .col-sm-12 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+  }
+
+  .banner {
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    .banner-effect {
+      position: relative;
+      width: 100%;
+      height: 150px;
+      background-color: rgba(0,0,0,.6);
+      z-index: 3;
+    }
+
+  }
+
+  footer {
+    padding-top: 50px;
+    color: $brand-white;
+    background-color: #333231;
+
+    p {
+      margin-bottom: 17px;
+    }
+
+    .footer-menu {
+      margin-bottom: 50px;
+
+      ul {
+        display: block;
+        width: 100%;
+
+        li {
+          margin-bottom: 7px;
+          list-style: none;
+
+          a {
+            color: $brand-white;
+          }
+
+        }
+
+      }
+
+    }
+
+    .copyright {
+      position: relative;
+      bottom: 0;
+      padding: 15px;
+      clear: both;
+      background-color: #000000;
+    }
+  }
+
+  .toTop {
+    display: block;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+  }
+
+  #animatedModal {
+
+    .closebt-class {
+
+      margin-top: 1em;
+
+      #closebt {
+        padding: 0.5em;
+        border: 1px solid $text-color;
+        border-radius: 50%;
+        color: $text-color;
+      }
+
+    }
+
+  }
+}
